@@ -76,3 +76,16 @@
     position: absolute;
     margin-left: 530px;
 }
+
+footer{
+    height: 34vh;
+}
+
+#contact_title h1{
+    margin-top: 5px;
+}
+
+#contact p{
+    font-size: large;
+    margin-bottom: 10px;
+}
