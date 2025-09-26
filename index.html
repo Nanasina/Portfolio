@@ -9,126 +9,232 @@
     <title>Portfolio</title>
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="w-full bg-blue-800 text-white fixed top-0 left-0 z-50 shadow-lg">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
+    <span class="font-bold text-xl tracking-wide">HASINA</span>
+    <ul class="flex gap-6 text-base font-medium">
+      <li><a href="#accueil" class="hover:text-blue-200 transition">Accueil</a></li>
+      <li><a href="#propos" class="hover:text-blue-200 transition">À propos de moi</a></li>
+      <li><a href="#competence" class="hover:text-blue-200 transition">Compétences</a></li>
+      <li><a href="#projet" class="hover:text-blue-200 transition">Projets</a></li>
+      <li><a href="#contact" class="hover:text-blue-200 transition">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!-- Décale le contenu pour ne pas être caché sous la navbar -->
+  <div class="pt-16"></div>
+
+<!-- Accueil -->
 <div class="my-10" id="accueil">
 
    <div class="container">
-       <img class="portrait" src="image/identite_photo(2).jpg" alt="Mon image">
+       <img class="portrait animate-fade-in" src="image/identite_photo(2).jpg" alt="Mon image">
    </div>
 
    <div class="text-center">
-    <h1 class="text-3xl font-bold my-3">BEFANAMBINANA ANDRIAMANANKASINA Nirih Lanto</h1>
-    <h2 class="text-blue-800 font-bold">Développeuse web</h2>
-    <p class="font-normal">Je suis une étudiante en informatique à l'ENI en deuxième année dans la branche Génie logiciel et Base de données. <br>Passionée par la tech, la robitique et la programmation
-    , j'aime crée des projets et des solutions numériques <br> pour résoudre les problèmes du quodient.
-    </p>
+    <!-- Accueil -->
+<h1 class="text-4xl font-bold my-3 before-fade-in animate-fade-in">BEFANAMBINANA ANDRIAMANANKASINA Nirih Lanto</h1>
+<h2 class="text-blue-800 text-2xl font-bold mb-8 before-fade-in animate-fade-in">Développeuse web</h2>
+<p class="text-lg text-gray-600 dark:text-gray-300 before-fade-in animate-fade-in" >Je suis une étudiante en informatique à l'ENI en deuxième année dans la branche Génie logiciel et Base de données. <br>Passionée par la tech, la robitique et la programmation
+, j'aime crée des projets et des solutions numériques <br> pour résoudre les problèmes du quodient.
+</p>
 
    </div>
     
 </div>
 
-<div class="propos">
-    <div class="text-center">
-         <h1 class="text-4xl font-bold my-3">A propos de Moi</h1>
-         <p class="font-normal">Les éléments ci-dessous montre mon parcours, formation et expérience</p>
+<!-- À propos -->
+<div class="propos" id="propos">
+  <section class="mx-10 my-10 p-8 rounded-xl bg-blue-200 shadow-xl/20">
+    <h1 class="text-4xl font-bold mb-8 before-fade-in animate-fade-in">À propos de moi</h1>
+    <p class="text-lg text-gray-700 mb-8 before-fade-in animate-fade-in">
+      Les éléments ci-dessous montrent mon parcours académique, mes formations et expériences.
+    </p>
+
+    <!-- Parcours académique -->
+    <h2 class="text-2xl font-semibold mb-4 before-fade-in animate-fade-in">Parcours académique</h2>
+    <div class="mb-5 before-fade-in animate-fade-in">
+      <p class="annee">2024-2025</p>
+      <p class="text-blue-800 font-bold">Deuxième année de Licence à l'ENI Fianarantsoa</p>
+      <p class="parcours">Génie Logiciel et Base de Données</p>
+    </div>
+    <div class="mb-5 before-fade-in animate-fade-in">
+      <p class="annee">2023-2024</p>
+      <p class="text-blue-800 font-bold">Première année de Licence à l'ENI Fianarantsoa</p>
+      <p class="parcours">Génie Logiciel et Base de Données</p>
+    </div>
+    <div class="mb-5 before-fade-in animate-fade-in">
+      <p class="annee">2022-2023</p>
+      <p class="text-blue-800 font-bold">Baccalauréat, série C, mention "Bien"</p>
     </div>
 
-    <div class="proposEduc ">
+    <!-- Formation & expérience -->
+    <h2 class="text-2xl font-semibold mb-4 mt-8 before-fade-in animate-fade-in">Formations & expériences</h2>
+    <div class="flex items-center gap-2 mb-3 before-fade-in animate-fade-in">
+      <img class="skill_img w-8 sm:w-10 md:w-12" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript"/>
+      <div>
+        <p class="annee">23-26 septembre 2025</p>
+        <p class="text-blue-800 font-bold">Formation en JavaScript</p>
+        <p class="lieu">ODC Fianarantsoa</p>
+      </div>
+    </div>
+    <!-- Ajoute d'autres expériences ici -->
+  </section>
+</div>
 
-        <section class="mx-10 my-10 p-8 rounded-xl bg-blue-200 shadow-xl/20 " id="education">
-
-            <h1>Education</h1>
-
-            <div class="mb-5" id="parcoursEni">
-                <p class="annee">2024-2025</p>
-                <p class="text-blue-800" id="anneeUniv">Deuxième année de Licence à L'Ecole Nationale d'Informatique Fianarantsoa</p>
-                <p class="parcours">Génie Logiciel et Base de Données</p>
-            </div>
-
-            <div class="mb-5" id="parcoursEniTwo">
-                <p class="annee">2023-2024</p>
-                <p class="text-blue-800" id="anneeUniv">Première année de Licence à L'Ecole Nationale d'Informatique Fianarantsoa</p>
-                <p class="parcours">Génie Logiciel et Base de Données</p>
-            </div>
-
-            <div class="mb-5" id="Bacc">
-                <p class="annee">2022-2023</p>
-                <p class="text-blue-800" id="anneeUniv">Baccalauréat, série C , mention " Bien "</p>
-            </div>
-
-         </section>
-
-        <section class="mx-10 my-10 p-8 rounded-xl bg-blue-200 w-[500px] shadow-xl/20 " id="formation">
-
-            <h1>Formation & expérience</h1>
-
-            <div class="OrangeFormat">
-                <p class="annee">23-26 septembre 2025</p>
-                <p class="text-blue-800" id="anneeUniv">Formation en JavaScript </p>
-                <p class="lieu">ODC Fianarantsoa</p>
-            </div>
-
-        </section>
-
+<!-- Compétences -->
+<div class="competence py-16 bg-white" id="competence">
+  <div class="max-w-4xl mx-auto px-6">
+    <div class="text-center mb-10">
+      <!-- Compétences -->
+<h1 class="text-4xl font-bold my-5 before-fade-in animate-fade-in">Mes Compétences</h1>
     </div>
 
+    <!-- Langages -->
+    <h3 class="text-xl font-semibold mb-6 before-fade-in animate-fade-in">Langages de programmation</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+      <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-3 before-fade-in animate-fade-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="w-8 h-8">
+        <span>HTML5</span>
+      </div>
+      <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-3 before-fade-in animate-fade-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="w-8 h-8">
+        <span>CSS3</span>
+      </div>
+      <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-3 before-fade-in animate-fade-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-8 h-8">
+        <span>JavaScript</span>
+      </div>
+      <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-3 before-fade-in animate-fade-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="w-8 h-8">
+        <span>Python</span>
+      </div>
+      <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-3 before-fade-in animate-fade-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" class="w-8 h-8">
+        <span>C#</span>
+      </div>
+    </div>
+
+    <!-- Frameworks & Librairies -->
+    <h3 class="text-xl font-semibold mb-6 before-fade-in animate-fade-in">Frameworks & Librairies</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-10">
+      <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-3 before-fade-in animate-fade-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="w-8 h-8">
+        <span>Bootstrap</span>
+      </div>
+      <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-3 before-fade-in animate-fade-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-8 h-8">
+        <span>Tailwind CSS</span>
+      </div>
+      <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-3 before-fade-in animate-fade-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg" alt="Vue.js" class="w-8 h-8">
+        <span>Vue.js</span>
+      </div>
+    </div>
+
+    <!-- Bases de données -->
+    <h3 class="text-xl font-semibold mb-6 before-fade-in animate-fade-in">Bases de données</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-3 before-fade-in animate-fade-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" class="w-8 h-8">
+        <span>MySQL</span>
+      </div>
+      <div class="flex items-center gap-3 bg-blue-50 rounded-lg p-3 before-fade-in animate-fade-in">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" class="w-8 h-8">
+        <span>PostgreSQL</span>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div class="competence">
-       <div class="text-center">
-         <h1 class="text-4xl font-bold my-5">Mes Compétences</h1>
-       </div>
+<!-- Projets -->
+<div class="projet" id="projet">
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <!-- Titre -->
+      <!-- Projets -->
+<h2 class="text-3xl font-bold text-center mb-5 before-fade-in animate-fade-in"> Mes Projets</h2>
+<p class="text-lg text-gray-600 dark:text-gray-300 text-center mb-10 before-fade-in animate-fade-in">Voici quelques projets réalisés pendant ma formation et autodidacte </p>
 
-     <div class="text-center" id="skill">
-        <h2>Langage de programation</h2>
-        <img class="skill_img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML5"/>
-        <p>HTML</p>
-        <img class="skill_img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
-        <p>CSS</p>
-        <img class="skill_img_js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" />
-        <p>JavaScript</p>
-        <img class="skill_img_py" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-        <p>Python</p>
-        <img class="skill_img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
-        <p>C#</p>
-     </div>
+<!-- Grille de projets -->
+<div class="grid md:grid-cols-3 gap-8">
+  
+  <!-- Projet 1 -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 before-fade-in animate-fade-in">
+    <img src="image/to_do_list.jpg" alt="Projet 1" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-xl font-semibold">To-Do List</h3>
+      <p class="text-gray-600 mt-2">
+        Une application simple pour gérer ses tâches quotidiennes.
+      </p>
+      <p class="mt-2 text-sm text-gray-500">Tech: HTML, CSS, JavaScript</p>
+      <div class="mt-4 flex gap-4">
+        <a href="https://github.com/Nanasina/TodoList.git" class="text-blue-600 font-medium hover:underline">Voir sur GitHub</a>
+        <a href="#" class="text-green-600 font-medium hover:underline">Démo</a>
+      </div>
+    </div>
+  </div>
 
-     <div class="text-center" id="skill">
-        <h2>Frameworks & Librairies</h2>
-        <img class="skill_img_js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg" />
-        <p>Bootstrap</p>
-        <img class="skill_img_tll" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
-        <p>Tailwind CSS</p>
-        <img class="skill_img" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original-wordmark.svg" />
-        <p>Vue.js</p>
-     </div>
+  <!-- Projet 2 -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden  transform transition-transform duration-300 hover:-translate-y-2 before-fade-in animate-fade-in">
+    <img src="image/jeu.jpg" alt="Projet 2" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-xl font-semibold">Jeu de devinette</h3>
+      <p class="text-gray-600 mt-2">
+        Un petit jeu où l’utilisateur doit deviner un nombre aléatoire.
+      </p>
+      <p class="mt-2 text-sm text-gray-500">Tech: HTML, CSS, JS</p>
+      <div class="mt-4 flex gap-4">
+        <a href="https://github.com/Nanasina/jeuDevinette.git" class="text-blue-600 font-medium hover:underline">Voir sur GitHub</a>
+        <a href="#" class="text-green-600 font-medium hover:underline">Démo</a>
+      </div>
+    </div>
+  </div>
 
-     <div class="text-center" id="skill">
-        <h2>Base de Donées</h2>
-        <img class="skill_img_py" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
-        <p>MySQL</p>
-        <img class="skill_img_js" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
-        <p>PostgreSQL</p>
-     </div>
+  <!-- Projet 3 -->
+  <div class="bg-white rounded-xl shadow-lg overflow-hidden  transform transition-transform duration-300 hover:-translate-y-2 before-fade-in animate-fade-in">
+    <img src="image/job.jpg" alt="Projet 3" class="w-full h-48 object-cover">
+    <div class="p-5">
+      <h3 class="text-xl font-semibold">Portfolio</h3>
+      <p class="text-gray-600 mt-2">
+        Mon portfolio personnel pour présenter mes projets et compétences.
+      </p>
+      <p class="mt-2 text-sm text-gray-500">Tech: HTML, TailwindCSS, JavaScript</p>
+      <div class="mt-4 flex gap-4">
+        <a href="https://github.com/Nanasina/Portfolio.git" class="text-blue-600 font-medium hover:underline">Voir sur GitHub</a>
+        <a href="#" class="text-green-600 font-medium hover:underline">Démo</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
 
 </div>
 
-<div class="projet">
-     <div class="text-center">
-         <h1 class="text-4xl font-bold my-5">Mes Projets</h1>
-       </div>
-</div>
-
-<footer class="bg-blue-200">
+<!-- Contact -->
+<footer class="bg-blue-200" id="contact">
      <div class="text-center" id="contact_title">
-         <h1 class="text-4xl font-bold my-5 ">Contact</h1>
+         <!-- Contact -->
+<h1 class="text-4xl font-bold before-fade-in animate-fade-in">Contact</h1>
     </div>
 
-    <div id="contact" class="text-center mb-8">
+    <div class="text-center mb-8 mt-8">
         <img class="skill_img_py" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-        <p>Github</p>
-        <p>E-mail</p>
-        <img  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
-        <p>Linkedln</p>
+        <a href="https://github.com/Nanasina" target="_blank" rel="noopener noreferrer">GitHub</a>
+
+        <div class="email-row my-2 before-fade-in animate-fade-in">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+            </svg>
+               <a href="mailto:hasinabefanambinana03@gmail.com ">E-mail</a>
+        </div>
+
+        <img class="skill_img_py" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
+        <a href="https://www.linkedin.com/in/nirih-lanto-befanambinana-andriamankasina-257932374?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">Linkedln</a>
     </div>
         
 </footer>
@@ -136,3 +242,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

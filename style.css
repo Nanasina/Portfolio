@@ -1,6 +1,7 @@
-/* body{
-    background-color: rgba(245, 245, 220, 0.311);
-} */
+body{
+    --tw-bg-opacity: 1;
+    background-color: var(--color-white);
+} 
 
 .container{
     display: block;
@@ -49,43 +50,119 @@
     margin-bottom: 10px;
 }
 
-.skill_img{
+.skill_img,
+.skill_img_js,
+.skill_img_py,
+.skill_img_tll {
     width: 50px;
-    height: 30px;
-    position: absolute;
-    margin-left: 564px;
+    height: 50px;
+    object-fit: contain;
+    display: inline-block;
+    margin: 0 8px 0 0; /* espace à droite, pas de auto */
+    position: static;
 }
 
-.skill_img_js {
-    width: 50px;
-    height: 30px;
-    position: absolute;
-    margin-left: 540px;
+#accueil{
+    height: 30vh;
 }
 
-.skill_img_py{
-    width: 50px;
-    height: 30px;
-    position: absolute;
-    margin-left: 550px;
+.propos{
+    height: 130vh;
 }
 
-.skill_img_tll{
-      width: 50px;
-    height: 30px;
-    position: absolute;
-    margin-left: 530px;
+.competence{
+    height: 120vh;
+}
+
+.projet{
+    height: 130vh;
 }
 
 footer{
-    height: 34vh;
+    height: 55vh;
 }
 
-#contact_title h1{
-    margin-top: 5px;
-}
+/* #contact_title h1{
+    margin-top: 10px;
+} */
 
 #contact p{
     font-size: large;
     margin-bottom: 10px;
+}
+
+.email-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px; /* espace entre l’icône et le texte */
+}
+
+#section_projet{
+    display: flex;
+}
+
+.before-fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive heights for sections */
+#accueil {
+    min-height: 60vh;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.propos {
+    min-height: 60vh;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.competence {
+    min-height: 60vh;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.projet {
+    min-height: 60vh;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+footer {
+    min-height: 40vh;
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 640px) {
+    #accueil,
+    .propos,
+    .competence,
+    .projet,
+    footer {
+        min-height: 40vh;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+}
+
+html {
+  scroll-behavior: smooth;
 }
